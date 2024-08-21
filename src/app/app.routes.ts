@@ -10,7 +10,7 @@ import { CalculationComponent } from './calculation/calculation.component';
 
 export const routes: Routes = [
    // {path:'',component:EmployeeComponent},
-   {path:'',component:CalculationComponent},
+   {path:'',component:MonthlyParameterComponent},
    {path:'jobcard',component:JobcardComponent},
    {path:'test',component:TestcompoComponent},
    {path:'compotwo',component:ComptwoComponent},

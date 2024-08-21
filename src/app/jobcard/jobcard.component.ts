@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-jobcard',
@@ -21,7 +21,7 @@ export class JobcardComponent implements OnInit {
 
   newForm() {
     this.jobForm = this.formBuilder.group({
-      jobCardMonth: [''],
+      jobCardMonth: ['',Validators.required],
       jobDivision: [''],
       jobShift: [''],
       jobSection: [''],

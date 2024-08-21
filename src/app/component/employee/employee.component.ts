@@ -13,6 +13,7 @@ export class EmployeeComponent implements OnInit {
 
   employeeForm!: FormGroup;//
   constructor(private formBuilder: FormBuilder)//dependecy injecting
+  // dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service).
 
   {
 
