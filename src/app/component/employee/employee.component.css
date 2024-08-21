@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* fr meaning fraction* kali kiyakata bedenwada*/
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2%;
+}
+
+.container .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* border: 1px solid black; */
+    /* margin: 2%;
+    padding: 2%; */
+    width: 50%;
+}
+
+input {
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+
+.container-2  {
+    display: grid;
+    grid-template-columns:  1fr;
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2%;
+}
+.btn{
+    margin: 15px;
+}

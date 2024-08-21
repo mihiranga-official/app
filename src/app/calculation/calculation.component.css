@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    max-width: 380px;
+}
+
+.container .items {
+    display: grid;
+    grid-template-rows: 1fr 1fr  ;
+    width: 125%;
+   
+    
+
+}
+
+input {
+    width: 50%;
+    margin-bottom: 5px;
+
+}
+.input-first{
+    width: 50%;
+}
+.input-second{
+    width: 50%;
+}
+select {
+    width: 50%;
+    margin-bottom: 5px;
+}
+button{
+    grid-template-columns: 1fr  ;
+    display: grid;
+    max-width: 250px;
+    max-height: 250px;
+}
+.table-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    max-width: 380px;
+}

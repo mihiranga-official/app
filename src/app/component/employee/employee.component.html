@@ -1,0 +1,37 @@
+<form [formGroup]="employeeForm" class="container" action="">
+  mona form group ekada kiyana eka [formGroup]
+  <div class="item">
+    <label class="lbl" for="">Emp Name</label>
+    <input type="text" formControlName="employeeName" /> formControlName group
+    eke tiyana item
+  </div>
+  
+  <div class="item">
+    <label for="">Emp City</label>
+    <input type="text" formControlName="employeeCity" />
+  </div>
+  <div class="item">
+    <label for="">Emp Type</label>
+    <input type="text" formControlName="employeetype" />
+  </div>
+  <div class="item">
+    <label for=""></label>
+    <button class="btn" (click)="log()">Submit</button>
+  </div>
+  <div formGroupName="employeeAdress">
+    <div class="item">
+        <label class="lbl" for="">FirstLane</label>
+        <input type="text" formControlName="firstLane" /> formControlName group
+        eke tiyana item
+      </div>
+      <div class="item">
+        <label for="">City</label>
+        <input type="text" formControlName="city" />
+      </div>
+      <div class="item">
+        <label for="">country</label>
+        <input type="text" formControlName="country" />
+      </div>
+  </div>
+</form>
+{{ this.employeeForm.value | json }}

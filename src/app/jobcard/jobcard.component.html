@@ -1,0 +1,75 @@
+<form [formGroup]="jobForm" action="" class="container">
+  <div class="items">
+    <label for="">Month:</label>
+    <input formControlName="jobCardMonth" type="date" />
+  </div>
+  <div class="items">
+    <label for="">Division:</label>
+    <select formControlName="jobDivision" name="" id="">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+  <div class="items">
+    <label for="">Shift:</label>
+
+    <select formControlName="jobShift" name="" id="">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+  <div class="items">
+    <label for="">Section:</label>
+    <select formControlName="jobSection" name="" id="">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+  <div class="items">
+    <label for="">In Date:</label>
+    <input formControlName="jobInDate" type="date" />
+  </div>
+  <div class="items">
+    <label for="">In Time:</label>
+    <input formControlName="jobInTime" type="time" />
+  </div>
+  <div class="items">
+    <label for="">Out Date:</label>
+    <input formControlName="jobOutDate" type="date" />
+  </div>
+  <div class="items">
+    <label for="">Out Time:</label>
+    <input formControlName="jobOutTime" type="time" />
+  </div>
+ <!-- <div>
+    <button (click)="output()">Submit</button>
+  </div>  -->
+</form>
+<form action="" class="second-container">
+  <div class="second-items">
+    <label for="">Pieace rate Item:</label>
+   <select name="" id=""></select>
+  </div>
+  <div class="second-items">
+    <label for="">Qty:</label>
+    <input class="input-second" type="text" />
+  </div>
+</form>
+<form action="" class="second-container-emp">
+  <div class="second-items">
+    <label for="">Employee Group:</label>
+    <select name="" id=""></select>
+  </div>
+</form>
+
+<div class="items-for-Button">
+  <button>Reset</button>
+  <button>Check Data>>></button>
+  <button>Save</button>
+  <button>(+)Add Employee</button>
+</div>
+
+{{ this.jobForm.value | json }}
