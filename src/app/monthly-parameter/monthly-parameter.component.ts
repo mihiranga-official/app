@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 })
 export class MonthlyParameterComponent implements OnInit {
 
-  parameterForm!:FormGroup;
+  parameterForm!:FormGroup;//creating a varibale 
   constructor(private formBuilder:FormBuilder){
     
   }
@@ -34,6 +34,9 @@ createFormForParameter(){
 
   })
 }
-
+showData(){
+  console.log(this.parameterForm.value);
+  
+}
 }
 

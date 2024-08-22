@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.divider-one{
+    display: grid;
+    border: 2px solid rgb(0, 15, 59);
+    grid-template-columns: 1fr 3fr;
+    margin: 2%;
+    padding: 2%;
+} 
+.divider-two{
+    display: grid;
+    border: 2px solid rgb(231, 11, 213);
+    grid-template-columns: 1fr 3fr;
+    margin: 5%;
+    padding: 5%;
+}
+.divider-three{
+    display: grid;
+    border: 2px solid rgb(221, 224, 26);
+    grid-template-columns: 1fr  ;
+    margin: 5%;
+    padding: 5%;
+    grid-template-columns: 1fr 2fr ;
+    
+}
+.divider-main{
+    display: grid;
+    border: 2px solid rgb(0, 15, 59);
+    grid-template-columns: 1fr ;
+    margin: 2%;
+    padding: 2%;
+} 

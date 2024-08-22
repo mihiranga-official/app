@@ -1,2 +1,97 @@
-<p>comptwo works!</p>
-<button (click)="log()">submit</button>
+
+<div [formGroup]="testForm"  class="container" style="border: solid red 1px; margin: 5px;">
+  
+    <div class="items">
+    <label for="id">Id:</label>
+    <input formControlName="id" type="number" id="id" />
+  </div>
+  
+  <div class="items">
+    <label for="divisionId">Divison Id:</label>
+    <input formControlName="divisionId" type="text" id="divisionId"/>
+  </div>
+
+  <div class="items">
+    <label for="">SectionId:</label>
+    <input formControlName="sectionId" type="text" />
+  </div>
+
+  <div class="items">
+    <label for="">Shift Method Id:</label>
+    <input formControlName="shiftMethodId" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Employee Rotate Group Id:</label>
+    <input formControlName="employeeRotateGroupId" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Piece Rate Item Id:</label>
+    <input formControlName="pieceRateItemId" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Piece RateHeader Id:</label>
+    <input formControlName="pieceRateHeaderId" type="text" />
+  </div>
+
+  <div class="items">
+    <label for="">In Date:</label>
+    <input formControlName="inDate" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Out Date:</label>
+    <input formControlName="outTime" type="text" />
+  </div>
+
+  <div class="items">
+    <label for="">Approved By Salary Dept:</label>
+    <input formControlName="approvedBySalaryDept" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Is Active:</label>
+    <input formControlName="isActive" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Created By:</label>
+    <input formControlName="createdBy" type="text" />
+  </div>
+  <div class="items">
+    <label for="">Created Date:</label>
+    <input formControlName="createdDate" type="text" />
+  </div>
+
+  <div formGroupName="epfNumbers" action="" style="border: solid blue 1px; margin: 5px;">
+    <div class="items">
+      <label for="">Piece Rate Effect Month:</label>
+      <input formControlName="pieceRateEffectMonth" type="text" />
+    </div>
+
+    <div class="items">
+      <label for="">Out Date:</label>
+      <input formControlName="outDate" type="text" />
+    </div>
+
+    <p formGroupName="inTime" action="" style="border: solid green 1px; margin: 5px;">
+
+        
+          <label for="">Effect Month:</label>
+          <input formControlName="effectMonth" type="text" />
+       
+          <label for="">Approved Status:</label>
+          <input formControlName="approvedStatus" type="text" />
+       
+    
+        <button (click)="log()">Submit Data</button>
+    </p>
+
+  </div>
+
+  
+</div>
+{{ this.testForm.value | json }}
+<br>
+<br>
+
+<h3>This is Check Valid Or Not </h3>
+{{ this.testForm.valid | json }}
+
+

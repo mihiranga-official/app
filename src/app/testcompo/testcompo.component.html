@@ -1,2 +1,99 @@
-<p>testcompo works!</p>
-<app-jobcard></app-jobcard>
+<div [formGroup]="testCompo">
+    
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="firstName">
+    </div>
+
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="middleName">
+    </div>
+
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="lastName">
+    </div>
+
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="phoneNumber">
+    </div>
+
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="nicNumber">
+    </div>
+
+    <div class="item">
+        <label for="">F Name:</label>
+        <input type="text" name="" id="" formControlName="email">
+    </div>
+
+    <div formGroupName="addressLine">
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="addressLineOne">
+        </div>
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="addressLineTwo">
+        </div>
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="province">
+        </div>
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="city">
+        </div>
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="country">
+        </div>
+
+        <div class="item">
+            <label for="">F Name:</label>
+            <input type="text" name="" id="" formControlName="zipcode">
+        </div>
+
+        <div formGroupName="cardDetails">
+                
+            <div class="item">
+                <label for="">F Name:</label>
+                <input type="text" name="" id="" formControlName="cardHolderName">
+            </div>
+
+            <div class="item">
+                <label for="">F Name:</label>
+                <input type="text" name="" id="" formControlName="cardNumber">
+            </div>
+
+            <div class="item">
+                <label for="">F Name:</label>
+                <input type="text" name="" id="" formControlName="expireDate">
+            </div>
+
+            <div class="item">
+                <label for="">F Name:</label>
+                <input type="text" name="" id="" formControlName="expireMonth">
+            </div>
+
+            <div class="item">
+                <label for="">F Name:</label>
+                <input type="text" name="" id="" formControlName="cvcNumber">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{{this.testCompo.value |json}}
+
+<button (click)="log()">Log</button>

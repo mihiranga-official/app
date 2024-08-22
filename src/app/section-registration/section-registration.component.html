@@ -1,28 +1,38 @@
-<form  action="" class="container">
-    <div class="items">
-      <label for="">User Id:</label>
-      <label for="">1</label>
-      
-    </div>
-    <div class="items">
-      <label for="">Select Division:</label>
-      <select formControlName="jobDivision" name="" id="">
-        <option value="A">A</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
-      </select>
-    </div>
-    <div class="items">
-      <label for="">Section Order:</label>
-      <input  name="" id="" placeholder="Input Section Order" required>
-  
- 
-    </div>
-    <div class="items">
-      <label for="">Section Name:</label>
-      <input  name="" id="" placeholder="Input Section Name Here" required>
-    </div>
-    <div class="buton-items">
-      <button >Save</button>
-      </div>
-  </form>
+<form [formGroup]="registartion" action="" class="container">
+  <div class="items">
+    <label for="">User Id:</label>
+    <input formControlName="userId" for="" />
+  </div>
+  <div class="items">
+    <label for="">Select Division:</label>
+    <select formControlName="selectDivision" name="" id="">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+  <div class="items">
+    <label for="">Section Order:</label>
+    <input
+      formControlName="sectionOrder"
+      name=""
+      id=""
+      placeholder="Input Section Order"
+      required
+    />
+  </div>
+  <div class="items">
+    <label for="">Section Name:</label>
+    <input
+      formControlName="sectionName"
+      name=""
+      id=""
+      placeholder="Input Section Name Here"
+      required
+    />
+  </div>
+  <div class="buton-items">
+    <button>Save</button>
+  </div>
+</form>
+{{ this.registartion.value | json }}

@@ -1,1 +1,45 @@
-<p>compo works!</p>
+<div [formGroup]="compo">
+  <label for="">UserName</label>
+  <input formControlName="username" type="text" />
+
+  <label for="">PassWord</label>
+  <input formControlName="password" type="text" />
+
+  <label for="">Confirm Password</label>
+  <input formControlName="confirmPassword" type="text" />
+
+  <label for="">Date Joined</label>
+  <input formControlName="dateJoined" type="text" />
+
+  <div formGroupName="profilePicture">
+    <label for="">addressLine1</label>
+    <input formControlName="addressLine1" type="text" />
+
+    <label for="">addressLine2</label>
+    <input formControlName="addressLine2" type="text" />
+
+    <label for="">city </label>
+    <input formControlName="city" type="text" />
+
+    <div formGroupName="state">
+      <label for="">postalCode</label>
+      <input formControlName="postalCode" type="text" />
+
+      <label for="">country</label>
+      <input formControlName="country" type="text" />
+
+      <div formGroupName="phoneNumber">
+        <label for="">email</label>
+        <input formControlName="email" type="text" />
+
+        <div formGroupName="newsletterSubscription">
+          <label for="">Terms And Conditions</label>
+          <input formControlName="termsAndConditions"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{this.compo.value|json}}

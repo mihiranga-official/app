@@ -18,22 +18,15 @@ export class ComptwoComponent implements OnInit {
   testForm!: FormGroup;
   constructor(private formBuilder: FormBuilder) {
 
-
-  }
-  ngOnInit(): void {
     this.createForm()
   }
+  ngOnInit(): void {
+    //this.createForm()
+  }
   createForm() {
-    // formGroup 
     this.testForm = this.formBuilder.group({
- // formControlers 
- 
- //FormControlNames
-
- //id: [''],
-//  divisionId:
       id: [''],
-      divisionId: ['', [Validators.required]],
+      divisionId: ['',[Validators.required,Validators.maxLength(10)]],
       sectionId: [''],
       shiftMethodId: [''],
       employeeRotateGroupId: [''],
@@ -47,16 +40,12 @@ export class ComptwoComponent implements OnInit {
       effectMonth: [''],
       approvedStatus: [''],
       approvedBySalaryDept: [''],
-      //formGroupName epfNumbers
       epfNumbers: this.formBuilder.group({
-         //FormControlNames
         pieceRateHeaderId: [''],
         pieceRateEffectMonth: [''],
         inDate: [''],
         outDate: [''],
-             //formGroupName inTime
         inTime: this.formBuilder.group({
-           //FormControlNames
           outTime: [''],
           effectMonth: [''],
           approvedStatus: [''],
