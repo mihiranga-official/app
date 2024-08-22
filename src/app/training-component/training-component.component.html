@@ -1,0 +1,36 @@
+<div [formGroup]="trainingForm">
+  <label for="">Employee ID:</label>
+  <input formControlName="employeeID" type="text" />
+
+  <div formGroupName="department">
+    <label for="">JobTitle</label>
+    <input formControlName="jobTitle" type="text" />
+  </div>
+
+  <div formGroupName="hireDate">
+    <label for="">Work Email</label>
+    <input formControlName="workEmail" type="text" />
+  </div>
+  <div formGroupName="workPhoneNumber">
+    <label for="">Certifications</label>
+    <input formControlName="certifications" type="text" />
+  </div>
+  <div formGroupName="officeLocation">
+    <label for="">Manager Name</label>
+    <input formControlName="managerName" type="text" />
+  </div>
+  <div formGroupName="emergencyContactName">
+    <label for="">Emergency ContactPhone</label>
+    <input formControlName="emergencyContactPhone" type="text" />
+  </div>
+  <div formGroupName="emergencyContactRelationship">
+    <label for="">Linkedin Profile</label>
+    <input formControlName="linkedinProfile" type="text" />
+  </div>
+  <div formGroupName="githubProfile">
+    <label for="">Skills</label>
+    <input formControlName="skills" type="text" />
+  </div>
+</div>
+<button (click)="clickMe()">Click me</button>
+{{this.trainingForm.value|json}}

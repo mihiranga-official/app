@@ -8,10 +8,11 @@ import { SectionRegistrationComponent } from './section-registration/section-reg
 import { MonthlyParameterComponent } from './monthly-parameter/monthly-parameter.component';
 import { CalculationComponent } from './calculation/calculation.component';
 import { CompoComponent } from './compo/compo.component';
+import { TrainingComponentComponent } from './training-component/training-component.component';
 
 export const routes: Routes = [
    // {path:'',component:EmployeeComponent},
-   {path:'',component:CompoComponent},
+   {path:'',component:TrainingComponentComponent},
    {path:'jobcard',component:JobcardComponent},
    {path:'test',component:TestcompoComponent},
    {path:'compotwo',component:ComptwoComponent},
