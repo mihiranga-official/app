@@ -1,0 +1,63 @@
+.container{
+
+    border: 1px solid red;
+    margin: 2%;
+    width: 700px;
+    height: 1000px;
+}
+.second-container{
+    border: 5px solid orange;
+    width: 600px;
+    height: 250px;
+    margin:2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.another-Container{
+    border: 5px solid rgb(51, 155, 235);
+    width: 150px;
+    height: 200px;
+    margin: 2%; 
+    display: grid;
+
+}
+.another-Container-second{
+    border: 5px solid rgb(200, 1, 1);
+    width: 150px;
+    height: 200px;
+    margin: 2%; 
+    display: grid;
+   
+   
+}
+
+
+.third-container{
+    border: 5px solid rgb(1, 1, 200);
+    width: 150px;
+    height: 200px;
+    margin: 2%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.box{
+    border: 5px solid rgb(225, 16, 187);
+    width: 40px;
+    height: 100px;
+    margin: 2%; 
+}
+.jes{
+    border:3px solid red;
+    width:30px;
+    height: 30px;
+    margin: 3%;
+}
+.jes-two{
+    border:3px solid red;
+    width:20px;
+    height: 20px;
+    margin: 5%;
+}

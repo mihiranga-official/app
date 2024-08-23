@@ -21,7 +21,7 @@ export class TrainingComponentComponent implements OnInit {
     this.trainingForm = this.formBuilder.group({
       employeeID: [''],
       department: this.formBuilder.group({
-        jobTitle: [''],
+        jobTitle: ['']
       }),
 
       hireDate: this.formBuilder.group({

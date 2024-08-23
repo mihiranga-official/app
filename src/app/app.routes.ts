@@ -9,10 +9,12 @@ import { MonthlyParameterComponent } from './monthly-parameter/monthly-parameter
 import { CalculationComponent } from './calculation/calculation.component';
 import { CompoComponent } from './compo/compo.component';
 import { TrainingComponentComponent } from './training-component/training-component.component';
+import { NestedComponentComponent } from './nested-component/nested-component.component';
+import { StyleComponentsComponent } from './style-components/style-components.component';
 
 export const routes: Routes = [
    // {path:'',component:EmployeeComponent},
-   {path:'',component:TrainingComponentComponent},
+   {path:'',component:StyleComponentsComponent},
    {path:'jobcard',component:JobcardComponent},
    {path:'test',component:TestcompoComponent},
    {path:'compotwo',component:ComptwoComponent},

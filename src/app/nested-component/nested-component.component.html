@@ -1,0 +1,144 @@
+<div [formGroup]="nestedCompoForm">
+  <label for="">FirstName</label>
+  <input formControlName="firstName" type="text" />
+  <label for="">Last Name</label>
+  <input formControlName="lastName" type="text" />
+  <label for="">Email</label>
+  <input formControlName="email" type="text" />
+  <div formGroupName="phoneNumber">
+    <label for="">dateOfBirth</label>
+    <input formControlName="dateOfBirth" type="text" />
+    <label for="">address</label>
+    <input formControlName="address" type="text" />
+    <label for="">city</label>
+    <input formControlName="city" type="text" />
+    <label for="">state</label>
+    <input formControlName="state" type="text" />
+
+    <div formGroupName="zipCode">
+      <label for="">userName</label>
+      <input formControlName="userName" type="text" />
+      <label for="">password</label>
+      <input formControlName="password" type="text" />
+      <label for="">securityQuestion</label>
+      <input formControlName="securityQuestion" type="text" />
+      <label for="">securityAnswer</label>
+      <input formControlName="securityAnswer" type="text" />
+
+      <div formGroupName="accountNumber">
+        <label for="">accountType</label>
+        <input formControlName="accountType" type="text" />
+        <label for="">bankName</label>
+        <input formControlName="bankName" type="text" />
+        <label for="">branchCode</label>
+        <input formControlName="branchCode" type="text" />
+
+        <div formGroupName="routingNumber">
+          <label for="">companyName</label>
+          <input formControlName="companyName" type="text" />
+          <label for="">jobTitle</label>
+          <input formControlName="jobTitle" type="text" />
+          <label for="">department</label>
+          <input formControlName="department" type="text" />
+          <label for="">employeeID</label>
+          <input formControlName="employeeID" type="text" />
+
+          <div formGroupName="startDate">
+            <label for="">End Dtae</label>
+            <input formControlName="endDate" type="text" />
+            <label for="">supervisorName</label>
+            <input formControlName="supervisorName" type="text" />
+
+            <div formGroupName="supervisorPhone">
+              <label for="">vehicleMake</label>
+              <input formControlName="vehicleMake" type="text" />
+              <label for="">vehicleModel</label>
+              <input formControlName="vehicleModel" type="text" />
+              <label for="">licensePlate</label>
+              <input formControlName="licensePlate" type="text" />
+
+              <div formGroupName="VIN">
+                <label for="">insuranceProvider</label>
+                <input formControlName="insuranceProvider" type="text" />
+                <label for="">policyNumber</label>
+                <input formControlName="policyNumber" type="text" />
+                <label for="">coverageType</label>
+                <input formControlName="coverageType" type="text" />
+
+                <div formGroupName="expirationDate">
+                  <label for="">emergencyContactName</label>
+                  <input formControlName="emergencyContactName" type="text" />
+                  <label for="">emergencyContactPhone</label>
+                  <input formControlName="emergencyContactPhone" type="text" />
+                  <label for="">relationship</label>
+                  <input formControlName="relationship" type="text" />
+
+                  <div formGroupName="medicalConditions">
+                    <label for="">allergies</label>
+                    <input formControlName="allergies" type="text" />
+                    <label for="">medications</label>
+                    
+                    <input formControlName="medications" type="text" />
+                    <label for="">passportNumber</label>
+                    <input formControlName="passportNumber" type="text" />
+
+                    <div formGroupName="issueDate">
+                      <label for="">issuingCountry</label>
+                      <input formControlName="issuingCountry" type="text" />
+                      <label for="">nationality</label>
+                      <input formControlName="nationality" type="text" />
+                      <label for="">visaType</label>
+                      <input formControlName="visaType" type="text" />
+                      <label for="">visaNumber</label>
+                      <input formControlName="visaNumber" type="text" />
+
+                      <div formGroupName="visaExpiration">
+                        <label for="">educationLevel</label>
+                        <input formControlName="educationLevel" type="text" />
+                        <label for="">institutionName</label>
+                        <input formControlName="institutionName" type="text" />
+
+                        <div formGroupName="graduationYear">
+                          <label for="">major</label>
+                          <input formControlName="major" type="text" />
+                          <label for="">minor</label>
+                          <input formControlName="minor" type="text" />
+                          <label for="">GPA</label>
+                          <input formControlName="GPA" type="text" />
+                          <label for="">honors</label>
+                          <input formControlName="honors" type="text" />
+
+                          <div formGroupName="extracurricularActivities">
+                            <label for="">projectName</label>
+                            <input formControlName="projectName" type="text" />
+
+                            <div formGroupName="projectDescription">
+                              <label for="">teamSize</label>
+                           
+                              <input formControlName="teamSize" type="text" />
+                              <label for="">role</label>
+                              <input formControlName="role" type="text" />
+                              <label for="">responsibilities</label>
+    
+                              <input formControlName="responsibilities" type="text" />
+                              <label for="">technologiesUsed</label>
+                              <input formControlName="technologiesUsed" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button (click)="onClick()">Submit</button>
+</div>
+<br />
+<br />
+{{ this.nestedCompoForm.value | json }}
