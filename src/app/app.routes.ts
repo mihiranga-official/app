@@ -11,10 +11,11 @@ import { CompoComponent } from './compo/compo.component';
 import { TrainingComponentComponent } from './training-component/training-component.component';
 import { NestedComponentComponent } from './nested-component/nested-component.component';
 import { StyleComponentsComponent } from './style-components/style-components.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 export const routes: Routes = [
-   // {path:'',component:EmployeeComponent},
-   {path:'',component:StyleComponentsComponent},
+   // {path:'',component:MonthlyParameterComponent},
+   {path:'',component:InventoryComponent},
    {path:'jobcard',component:JobcardComponent},
    {path:'test',component:TestcompoComponent},
    {path:'compotwo',component:ComptwoComponent},
