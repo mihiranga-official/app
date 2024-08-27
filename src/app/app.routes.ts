@@ -12,10 +12,12 @@ import { TrainingComponentComponent } from './training-component/training-compon
 import { NestedComponentComponent } from './nested-component/nested-component.component';
 import { StyleComponentsComponent } from './style-components/style-components.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 export const routes: Routes = [
    // {path:'',component:MonthlyParameterComponent},
-   {path:'',component:InventoryComponent},
+   {path:'',component:RegisterFormComponent},
    {path:'jobcard',component:JobcardComponent},
    {path:'test',component:TestcompoComponent},
    {path:'compotwo',component:ComptwoComponent},

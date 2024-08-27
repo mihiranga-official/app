@@ -1,0 +1,27 @@
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+form{
+    background-color: #0C162D;
+    position: relative;
+   
+
+}
+h1{
+color: aliceblue;
+}
+
+button{
+    width: 75%;
+ margin-left: 12%;
+ color: aliceblue;
+ margin-bottom: 25%;
+}
+h6{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    
+}

@@ -1,0 +1,32 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+form{
+    background-color: #0C162D;
+    height: 550px;
+   
+   
+    
+}
+h1{
+color: aliceblue;
+}
+
+button{
+    width: 75%;
+ margin-left: 12%;
+ 
+}
+h6{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.container-fluid{
+    padding: 0px;
+    
+}
